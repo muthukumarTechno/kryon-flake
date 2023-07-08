@@ -1,10 +1,10 @@
 import this
 
-from core.Resource import Resource
+from core.DomainResource import DomainResource
 from core.utils.resource_validator import is_common_resource_validation
 
 
-class Patient(Resource):
+class Patient(DomainResource):
     resource = None
 
 
