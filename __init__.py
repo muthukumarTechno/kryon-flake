@@ -3,6 +3,7 @@ from flask import Flask, jsonify, request, render_template
 import rest_handler
 
 # creating a Flask app
+
 app = Flask(__name__, template_folder='templates')
 
 

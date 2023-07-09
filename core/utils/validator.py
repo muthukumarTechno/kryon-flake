@@ -7,9 +7,8 @@ def validate_resource_type(resource_type, json):
 
     if resource_type is not None:
         resource_path = build_schema_ref_path(resource_ref)
-        print(get_schema().get(resource_path))
         if resource_type == 'Patient':
-            patient = Patient(json)
+            patient = Patient(json, resource_path)
 
     return None
 

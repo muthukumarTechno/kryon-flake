@@ -25,3 +25,7 @@ def build_schema_ref_path(resource_ref: str):
         return resource_ref[2:].replace('/', '.')
     else:
         return resource_ref
+
+
+
+
