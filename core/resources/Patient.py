@@ -1,5 +1,3 @@
-import datetime
-
 from core.DomainResource import DomainResource
 from core.utils.resource_validator import is_common_resource_validation
 from core.utils.util_functions import property_and_datatype_checker
@@ -29,7 +27,6 @@ class Patient(DomainResource):
             for resource_data in self.resource.get(data['patient_key']):
 
                 backlog_data_1 = property_and_datatype_checker(get_schema().get(data['path']), resource_data, errors)
-                print(backlog_data_1)
                 for data_1 in backlog_data_1:
 
                     for resource_data_1 in resource_data.get(data_1['patient_key']):
